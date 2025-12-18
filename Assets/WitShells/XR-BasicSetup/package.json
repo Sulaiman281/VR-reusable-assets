@@ -1,7 +1,7 @@
 {
 	"name": "com.witshells.xr-basic-setup",
 	"displayName": "WitShells XR Basic Setup",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"unity": "2022.3",
 	"description": "Utilities for XR to coordinate hand tracking and controller visuals. Input System–driven trigger/grip animation and reliable visual toggling (controllers vs hands).",
 	"author": {

@@ -90,10 +90,6 @@ namespace WitShells.XR
             bool isControllerTracked = Utils.Utils.IsControllerActuallyTracked();
             bool isHandTracked = handVisualizer != null && handVisualizer.anyHandTracked;
 
-            Debug.Log($"isControllerTracked: {isControllerTracked}, isHandTracked(any from HandVisualizer): {isHandTracked}");
-
-            // Show controller visuals only when controllers are tracked AND hands are not tracked
-            // If you want controllers to override hands, change to: enable = isControllerTracked || !isHandTracked;
             bool enable = isControllerTracked && !isHandTracked;
             ToggleRenderers(enable);
         }
