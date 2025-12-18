@@ -1,0 +1,34 @@
+{
+	"name": "com.witshells.xr-basic-setup",
+	"displayName": "WitShells XR Basic Setup",
+	"version": "0.1.0",
+	"unity": "2022.3",
+	"description": "Utilities for XR to coordinate hand tracking and controller visuals. Input System–driven trigger/grip animation and reliable visual toggling (controllers vs hands).",
+	"author": {
+		"name": "WitShells",
+		"email": "sayedsulaiman607@gmail.com",
+		"url": "https://github.com/Sulaiman281/VR-reusable-assets"
+	},
+	"documentationUrl": "https://github.com/Sulaiman281/VR-reusable-assets#readme",
+	"changelogUrl": "https://github.com/Sulaiman281/VR-reusable-assets/commits/main",
+	"licensesUrl": "https://github.com/Sulaiman281/VR-reusable-assets/blob/main/LICENSE",
+	"repository": { "type": "git", "url": "https://github.com/Sulaiman281/VR-reusable-assets.git" },
+	"keywords": [
+		"xr",
+		"hands",
+		"controller",
+		"input-system",
+		"visualizer"
+	],
+	"dependencies": {
+		"com.unity.inputsystem": "1.7.0",
+		"com.unity.xr.hands": "1.7.2"
+	},
+	"samples": [
+		{
+			"displayName": "Basic Setup",
+			"description": "A minimal setup demonstrating controller-driven animation and controller/hand visual toggling.",
+			"path": "Samples~/Basic Setup"
+		}
+	]
+}

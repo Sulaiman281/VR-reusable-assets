@@ -1,0 +1,19 @@
+{
+    "name": "WitShells.XR.BasicSetup.Runtime",
+    "rootNamespace": "WitShells.XR",
+    "references": [
+        "Unity.InputSystem",
+        "Unity.XR.Hands",
+        "Unity.XR.Interaction.Toolkit",
+        "Unity.XR.Hands.Samples.VisualizerSample"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

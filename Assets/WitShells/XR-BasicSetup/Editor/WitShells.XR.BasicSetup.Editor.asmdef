@@ -1,0 +1,19 @@
+{
+    "name": "WitShells.XR.BasicSetup.Editor",
+    "rootNamespace": "WitShells.XR.Editor",
+    "references": [
+        "WitShells.XR.BasicSetup.Runtime",
+        "Unity.XR.Interaction.Toolkit"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
