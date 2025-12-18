@@ -28,7 +28,7 @@
 		{
 			"displayName": "Basic Setup",
 			"description": "A minimal setup demonstrating controller-driven animation and controller/hand visual toggling.",
-			"path": "Samples/Basic Setup"
+			"path": "Samples~/Basic Setup"
 		}
 	]
 }
