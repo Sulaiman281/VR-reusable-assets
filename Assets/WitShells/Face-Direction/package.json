@@ -1,0 +1,18 @@
+{
+    "name": "com.witshells.face-direction",
+    "displayName": "WitShells VR Face Direction Controller",
+    "version": "0.1.0",
+    "unity": "2022.3",
+    "description": "VR movement using head-facing direction with CharacterController and smooth body rotation.",
+    "keywords": [
+        "VR",
+        "movement",
+        "camera",
+        "facing",
+        "charactercontroller"
+    ],
+    "author": {
+        "name": "WitShells"
+    },
+    "dependencies": {}
+}

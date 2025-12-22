@@ -1,0 +1,14 @@
+{
+  "name": "WitShells.FaceDirection.Runtime",
+  "rootNamespace": "WitShells.FaceDirection",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
