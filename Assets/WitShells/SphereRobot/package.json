@@ -1,0 +1,27 @@
+{
+    "name": "com.witshells.sphererobot",
+    "version": "1.0.0",
+    "displayName": "WitShells Sphere Robot",
+    "description": "A hovering AI sphere companion with smooth floating animation and multiple behavior states including Idle, Follow, Destination, and Face-to-Face interactions.",
+    "unity": "2021.3",
+    "unityRelease": "0f1",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "keywords": [
+        "ai",
+        "companion",
+        "robot",
+        "sphere",
+        "hover",
+        "follow",
+        "vr",
+        "xr"
+    ],
+    "author": {
+        "name": "WitShells",
+        "email": "sayedsulaiman607@gmail.com",
+        "url": "https://witshells.com"
+    },
+    "samples": []
+}
