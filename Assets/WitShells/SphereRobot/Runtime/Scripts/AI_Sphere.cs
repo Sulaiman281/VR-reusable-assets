@@ -24,6 +24,9 @@ namespace WitShells.SphereRobot
         [SerializeField, Tooltip("Minimum distance to keep from target")]
         private float orbitRadius = 4f;
 
+        [SerializeField, Tooltip("Orbit position offset relative to target (e.g., (-2,0,1) for left-back position)")]
+        private Vector3 orbitOffset = new Vector3(-2f, 0f, 1f);
+
         [SerializeField, Tooltip("Threshold to consider sphere as stopped")]
         private float stoppedThreshold = 0.05f;
 
@@ -122,13 +125,27 @@ namespace WitShells.SphereRobot
                 return;
             }
 
+            // Calculate desired orbit position using target's local space
+            Vector3 targetRight = followTarget.right;
+            Vector3 targetForward = followTarget.forward;
+            Vector3 targetUp = followTarget.up;
+
+            Vector3 desiredOrbitPosition = followTarget.position +
+                targetRight * orbitOffset.x +
+                targetUp * orbitOffset.y +
+                targetForward * orbitOffset.z;
+
+            Vector3 toOrbitPosition = desiredOrbitPosition - transform.position;
+            toOrbitPosition.y = 0; // Only consider horizontal distance for movement
+            float distanceToOrbitPosition = toOrbitPosition.magnitude;
+
             Vector3 toTarget = followTarget.position - transform.position;
-            toTarget.y = 0; // Only consider horizontal distance
+            toTarget.y = 0;
             float distanceToTarget = toTarget.magnitude;
 
-            if (distanceToTarget > orbitRadius)
+            // If far from target, move towards target first
+            if (distanceToTarget > orbitRadius * 1.5f)
             {
-                // Move towards target, stop at orbit radius
                 _isMoving = true;
                 Vector3 direction = toTarget.normalized;
                 float moveDistance = Mathf.Min(moveSpeed * Time.deltaTime, distanceToTarget - orbitRadius);
@@ -147,9 +164,30 @@ namespace WitShells.SphereRobot
                     );
                 }
             }
+            // If close to target but not at orbit position, move to orbit position
+            else if (distanceToOrbitPosition > stoppedThreshold)
+            {
+                _isMoving = true;
+                Vector3 direction = toOrbitPosition.normalized;
+                float moveDistance = Mathf.Min(moveSpeed * Time.deltaTime, distanceToOrbitPosition);
+
+                Vector3 newPos = transform.position + direction * moveDistance;
+                newPos.y = _baseHoverY; // No floating while moving
+                transform.position = newPos;
+
+                // Face movement direction
+                if (direction != Vector3.zero)
+                {
+                    transform.rotation = Quaternion.Slerp(
+                        transform.rotation,
+                        Quaternion.LookRotation(direction),
+                        Time.deltaTime * 5f
+                    );
+                }
+            }
             else
             {
-                // Within orbit radius - stay and float
+                // At orbit position - stay, float, and face the target
                 _isMoving = false;
                 ApplyFloatAndHeight();
 
