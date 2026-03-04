@@ -1,0 +1,19 @@
+{
+  "name": "WitShells.VR.AvatarSetup.Editor",
+  "rootNamespace": "WitShells.VRAvatarSetup.Editor",
+  "references": [
+    "WitShells.VR.AvatarSetup.Runtime",
+    "Unity.Animation.Rigging"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
