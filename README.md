@@ -13,11 +13,13 @@ Reusable VR/XR utilities for Unity — movement, gestures, hand visuals, and AI 
   - [Installation](#installation)
   - [Packages \& Git URLs](#packages--git-urls)
     - [XR Basic Setup](#xr-basic-setup)
+    - [VR Avatar Setup](#vr-avatar-setup)
     - [Hand Swing Input](#hand-swing-input)
     - [Face Direction Controller](#face-direction-controller)
     - [Sphere Robot](#sphere-robot)
   - [Package Details](#package-details)
     - [XR Basic Setup](#xr-basic-setup-1)
+    - [VR Avatar Setup](#vr-avatar-setup-1)
     - [Hand Swing Input](#hand-swing-input-1)
     - [Face Direction Controller](#face-direction-controller-1)
     - [Sphere Robot](#sphere-robot-1)
@@ -39,6 +41,11 @@ Reusable VR/XR utilities for Unity — movement, gestures, hand visuals, and AI 
 ### XR Basic Setup
 ```
 https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/XR-BasicSetup
+```
+
+### VR Avatar Setup
+```
+https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/VR-AvatarSetup
 ```
 
 ### Hand Swing Input
@@ -77,6 +84,24 @@ Reusable XR utilities for coordinating controller and hand visuals.
 5. Ensure an active `XRHandSubsystem` in your XR configuration
 
 **Samples:** Package Manager → WitShells XR Basic Setup → Samples → Import "Basic Setup"
+
+---
+
+### VR Avatar Setup
+
+Tools to quickly rig and drive full-body humanoid avatars in VR.
+
+**Features:**
+- **Setup Wizard** (Window → WitShells → VR Avatar Setup) — Auto-configures IK targets and constraints.
+- `XRFingerBoneTracker` — Maps XR finger tracking data directly to avatar bone rotations.
+- `IKFootSolver` — Basic procedural foot placement for grounding.
+- `AnimateOnInput` — Maps controller buttons (grip/trigger) to animator parameters.
+
+**Quick Start:**
+1. Open **WitShells → VR Avatar Setup**.
+2. Assign your avatar root.
+3. Assign VR targets (Camera/Hands) and IK targets (Head/Hands/Feet).
+4. Click **Setup** to generate the Rig Builder and constraints.
 
 ---
 
@@ -129,7 +154,8 @@ A hovering AI sphere companion with smooth floating animation and multiple behav
 **Public API:**
 ```csharp
 sphere.SetDestination(Vector3 position);    // Move to point
-sphere.ClearDestination();                   // Cancel & go idle
+spVR Avatar Setup | 2022.3+ | Input System, XR Hands, Animation Rigging |
+| here.ClearDestination();                   // Cancel & go idle
 sphere.SetFollowTarget(Transform target);    // Start following
 sphere.StopFollowing();                      // Stop following
 sphere.FaceToFaceTheTarget(Transform target); // Position face-to-face
