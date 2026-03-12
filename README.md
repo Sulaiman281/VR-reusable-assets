@@ -17,12 +17,14 @@ Reusable VR/XR utilities for Unity — movement, gestures, hand visuals, and AI 
     - [Hand Swing Input](#hand-swing-input)
     - [Face Direction Controller](#face-direction-controller)
     - [Sphere Robot](#sphere-robot)
+    - [CheckPoint](#checkpoint)
   - [Package Details](#package-details)
     - [XR Basic Setup](#xr-basic-setup-1)
     - [VR Avatar Setup](#vr-avatar-setup-1)
     - [Hand Swing Input](#hand-swing-input-1)
     - [Face Direction Controller](#face-direction-controller-1)
     - [Sphere Robot](#sphere-robot-1)
+    - [CheckPoint](#checkpoint-1)
   - [Requirements](#requirements)
   - [License](#license)
 
@@ -61,6 +63,11 @@ https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/Fac
 ### Sphere Robot
 ```
 https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/SphereRobot
+```
+
+### CheckPoint
+```
+https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/CheckPoint
 ```
 
 ---
@@ -168,6 +175,24 @@ sphere.FaceToFaceTheTarget(Transform target); // Position face-to-face
 
 ---
 
+### CheckPoint
+
+A cylinder trigger zone with a custom Shader Graph material that fires events when objects enter or exit.
+
+**Features:**
+- `CheckPointTrigger` — Fires `OnObjectEntered` / `OnObjectExited` `UnityEvent<GameObject>` on trigger overlap
+- `LayerMask` filtering — only reacts to objects on the configured layers
+- `CheckPointTriggerData` — Attach an identifier, world position, and active flag to each zone
+- **Editor tool** (GameObject → WitShells → Create CheckPoint) — spawns a Cylinder with the `CheckPoint-Cylinder` shader material and the trigger script pre-configured in one click
+
+**Quick Start:**
+1. Use **GameObject → WitShells → Create CheckPoint** to place a zone in the scene
+2. Set `Trigger Layer Mask` to the layers you want to detect (e.g. `Player`)
+3. Fill in `Data.Identifier` to tell zones apart in callbacks
+4. Subscribe to `OnObjectEntered` / `OnObjectExited` in the Inspector or via code
+
+---
+
 ## Requirements
 
 | Package | Unity Version | Dependencies |
@@ -176,6 +201,7 @@ sphere.FaceToFaceTheTarget(Transform target); // Position face-to-face
 | Hand Swing Input | 2021.3+ | None |
 | Face Direction Controller | 2021.3+ | None |
 | Sphere Robot | 2021.3+ | None |
+| CheckPoint | 2022.3+ | Shader Graph |
 
 ---
 

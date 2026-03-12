@@ -1,0 +1,18 @@
+{
+    "name": "WitShells.CheckPoint.Editor",
+    "rootNamespace": "WitShells.CheckPoint.Editor",
+    "references": [
+        "WitShells.CheckPoint.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

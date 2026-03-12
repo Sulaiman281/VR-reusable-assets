@@ -1,0 +1,26 @@
+{
+    "name": "com.witshells.checkpoint",
+    "displayName": "WitShells CheckPoint",
+    "version": "0.1.0",
+    "unity": "2022.3",
+    "description": "A cylinder trigger zone with a custom Shader Graph material. Fires UnityEvents when an object enters or exits the zone, filtered by LayerMask.",
+    "author": {
+        "name": "WitShells",
+        "email": "sayedsulaiman607@gmail.com",
+        "url": "https://github.com/Sulaiman281/VR-reusable-assets"
+    },
+    "documentationUrl": "https://github.com/Sulaiman281/VR-reusable-assets#readme",
+    "changelogUrl": "https://github.com/Sulaiman281/VR-reusable-assets/commits/main",
+    "licensesUrl": "https://github.com/Sulaiman281/VR-reusable-assets/blob/main/LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sulaiman281/VR-reusable-assets.git"
+    },
+    "keywords": [
+        "checkpoint",
+        "trigger",
+        "vr",
+        "shader-graph"
+    ],
+    "dependencies": {}
+}
