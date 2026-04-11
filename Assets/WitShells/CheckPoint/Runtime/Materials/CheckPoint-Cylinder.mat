@@ -43,9 +43,9 @@ Material:
     - _QueueOffset: 0
     - _XRMotionVectorsPass: 1
     m_Colors:
-    - _Base: {r: 1, g: 1, b: 1, a: 1}
+    - _Base: {r: 1, g: 1, b: 1, a: 0.9411765}
     - _FadeIn: {r: -1, g: 1, b: 0, a: 0}
-    - _FadeOut: {r: 0, g: 3.35, b: 0, a: 0}
+    - _FadeOut: {r: 0, g: 2.72, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &825584273226250613
