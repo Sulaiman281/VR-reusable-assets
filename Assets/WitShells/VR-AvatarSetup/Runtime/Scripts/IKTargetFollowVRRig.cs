@@ -22,6 +22,15 @@ namespace WitShells.VRAvatarSetup
             ikTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
         }
 
+        public void Map(Pose pose)
+        {
+            if (ikTarget == null)
+                return;
+
+            ikTarget.position = pose.position + pose.rotation * trackingPositionOffset;
+            ikTarget.rotation = pose.rotation * Quaternion.Euler(trackingRotationOffset);
+        }
+
         public void AutoComputeOffsetsFromCurrentPose()
         {
             if (!IsValid)
@@ -37,17 +46,20 @@ namespace WitShells.VRAvatarSetup
         [Range(0f, 1f)]
         [SerializeField] private float turnSmoothness = 0.1f;
 
-        [SerializeField] private VRMap head = new VRMap
+        [SerializeField]
+        private VRMap head = new VRMap
         {
             trackingPositionOffset = Vector3.zero,
             trackingRotationOffset = Vector3.zero
         };
-        [SerializeField] private VRMap leftHand = new VRMap
+        [SerializeField]
+        private VRMap leftHand = new VRMap
         {
             trackingPositionOffset = new Vector3(-0.04f, -0.02f, -0.1f),
             trackingRotationOffset = new Vector3(11.5f, 87.3f, 105.8f)
         };
-        [SerializeField] private VRMap rightHand = new VRMap
+        [SerializeField]
+        private VRMap rightHand = new VRMap
         {
             trackingPositionOffset = new Vector3(0.04f, -0.02f, -0.1f),
             trackingRotationOffset = new Vector3(11.5f, -87.3f, -105.8f)

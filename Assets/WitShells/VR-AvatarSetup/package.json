@@ -1,6 +1,6 @@
 {
   "name": "com.witshells.vr-avatar-setup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "WitShells VR Avatar Setup",
   "description": "Runtime components and editor tooling to quickly prepare humanoid avatars for VR head/hand mapping and foot IK setup.",
   "unity": "2022.3",
