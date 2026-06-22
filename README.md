@@ -2,7 +2,7 @@
 
 Reusable VR/XR utilities for Unity — movement, gestures, hand visuals, and AI companions.
 
-**Repository:** https://github.com/Sulaiman281/VR-reusable-assets
+**Repository:** https://github.com/syed-suleman-shah-engineer/VR-reusable-assets
 
 ---
 
@@ -42,32 +42,32 @@ Reusable VR/XR utilities for Unity — movement, gestures, hand visuals, and AI 
 
 ### XR Basic Setup
 ```
-https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/XR-BasicSetup
+https://github.com/syed-suleman-shah-engineer/VR-reusable-assets.git?path=/Assets/WitShells/XR-BasicSetup
 ```
 
 ### VR Avatar Setup
 ```
-https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/VR-AvatarSetup
+https://github.com/syed-suleman-shah-engineer/VR-reusable-assets.git?path=/Assets/WitShells/VR-AvatarSetup
 ```
 
 ### Hand Swing Input
 ```
-https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/Hand-Swing
+https://github.com/syed-suleman-shah-engineer/VR-reusable-assets.git?path=/Assets/WitShells/Hand-Swing
 ```
 
 ### Face Direction Controller
 ```
-https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/Face-Direction
+https://github.com/syed-suleman-shah-engineer/VR-reusable-assets.git?path=/Assets/WitShells/Face-Direction
 ```
 
 ### Sphere Robot
 ```
-https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/SphereRobot
+https://github.com/syed-suleman-shah-engineer/VR-reusable-assets.git?path=/Assets/WitShells/SphereRobot
 ```
 
 ### CheckPoint
 ```
-https://github.com/Sulaiman281/VR-reusable-assets.git?path=/Assets/WitShells/CheckPoint
+https://github.com/syed-suleman-shah-engineer/VR-reusable-assets.git?path=/Assets/WitShells/CheckPoint
 ```
 
 ---
